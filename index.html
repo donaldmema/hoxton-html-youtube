@@ -6,14 +6,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
+
   <body>
     <div class="container">
-      <header class="header">Header</header>
+      <header class="header">
+        <div class="header__left-side">
+          <span class="material-symbols-outlined"> menu </span>
+          <img
+            src="./assets/images/youtube-tr-logo.jpg"
+            alt="youtube turkey"
+            width="100px"
+          />
+        </div>
+
+        <div class="header__center">
+          <input type="search" placeholder="Search" />
+
+          <button>
+            <span class="material-symbols-outlined"> search </span>
+          </button>
+
+          <button>
+            <span class="material-symbols-outlined">
+              keyboard_voice
+              <style>
+                .material-symbols-outlined {
+                  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0,
+                    "opsz" 40;
+                }
+              </style>
+            </span>
+          </button>
+        </div>
+
+        <div class="header__right-side">
+          <button>
+            <span class="material-symbols-outlined"> apps </span>
+          </button>
+
+          <button>
+            <span class="material-symbols-outlined"> more_vert </span>
+          </button>
+        </div>
+      </header>
       <main class="main">
         <aside class="guide-section">Nav Guide</aside>
+
         <section class="main__content">
           <header class="main__content-header">Categories</header>
+
           <section class="content-grid">Content Content</section>
         </section>
       </main>

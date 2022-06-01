@@ -4,6 +4,17 @@
   box-sizing: border-box;
 
   font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+}
+
+:root {
+  --primary-color: #202020;
+  --content-grid-background-color: #181818;
+  --guide-section-background-color: #212121;
+  --categories-button-color: #373737;
+  --categories-button-hover-color: #ffffff;
+  --text-color: #fff;
+  --secondary-text-color: #aaa;
 }
 
 .container {
@@ -17,21 +28,25 @@
 /* This is the Header Section */
 
 .header {
-  background-color: #00ff0040;
-  /* width: 100%;
-  height: 40px;
-  background-color: #000000dd;
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 55px;
   backdrop-filter: blur(10px);
   position: fixed;
   top: 0px;
   left: 0px;
-  z-index: 50; */
+  z-index: 50;
+
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /* This is the Main Section */
 
 .main {
-  /* margin-top: 50px; TODO:Change this accordingly to the height of the header when it becomes fixed */
+  margin-top: 55px; /* TODO:Change this accordingly to the height of the header when it becomes fixed */
 
   /* background-color: #0000ff40; */
   display: grid;
