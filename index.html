@@ -16,41 +16,42 @@
     <div class="container">
       <header class="header">
         <div class="header__left-side">
-          <span class="material-symbols-outlined"> menu </span>
-          <img
-            src="./assets/images/youtube-tr-logo.jpg"
-            alt="youtube turkey"
-            width="100px"
-          />
+          <button class="header__transparent-button">
+            <span class="material-symbols-outlined"> menu </span>
+          </button>
+          <a href="#"
+            ><img
+              src="./assets/images/youtube-tr-logo.jpg"
+              alt="youtube turkey"
+          /></a>
         </div>
 
         <div class="header__center">
-          <input type="search" placeholder="Search" />
+          <input class="search-area" type="search" placeholder="Search" />
 
-          <button>
+          <button class="search-btn">
             <span class="material-symbols-outlined"> search </span>
           </button>
 
-          <button>
-            <span class="material-symbols-outlined">
-              keyboard_voice
-              <style>
-                .material-symbols-outlined {
-                  font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0,
-                    "opsz" 40;
-                }
-              </style>
-            </span>
+          <button class="voice-search-btn">
+            <span class="material-symbols-outlined"> keyboard_voice </span>
           </button>
         </div>
 
         <div class="header__right-side">
-          <button>
+          <button class="header__transparent-button">
             <span class="material-symbols-outlined"> apps </span>
           </button>
 
-          <button>
+          <button class="header__transparent-button">
             <span class="material-symbols-outlined"> more_vert </span>
+          </button>
+
+          <button class="sign-in-button">
+            <span class="material-symbols-outlined" style="color: #3ea6ff">
+              account_circle
+            </span>
+            SIGN IN
           </button>
         </div>
       </header>
