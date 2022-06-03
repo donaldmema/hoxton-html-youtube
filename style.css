@@ -12,7 +12,7 @@
   --content-grid-background-color: #181818;
   --guide-section-background-color: #212121;
   --categories-button-color: #373737;
-  --categories-button-hover-color: #ffffff;
+  --categories-button-selected-color: #ffffff;
   --text-color: #fff;
   --secondary-text-color: #aaa;
 }
@@ -143,6 +143,10 @@
 
 .guide-section {
   background-color: #fff00040;
+  height: calc(100vh - 55px);
+  /* width: auto; */
+  /* position: fixed; */
+  overflow: auto;
 }
 
 /* This is the Main Content Section */
@@ -156,7 +160,38 @@
 /* This is the Content Header Section */
 
 .main__content-header {
-  background-color: #00aaff;
+  background-color: var(--primary-color);
+  height: 55px;
+  display: grid;
+  grid-auto-flow: column;
+  place-content: start;
+  align-content: center;
+  gap: 10px;
+  padding-left: 25px;
+  border-top: 1px solid var(--categories-button-color);
+  border-bottom: 1px solid var(--categories-button-color);
+
+  overflow-x: auto;
+}
+
+.content-header__categories-btn {
+  background-color: var(--categories-button-color);
+  padding: 5px 20px;
+  border-radius: 15px;
+  border: 1px solid #4b4b4b;
+  font-size: 14px;
+  width: max-content;
+  cursor: pointer;
+  transition: 350ms;
+}
+
+.content-header__categories-btn:hover {
+  filter: brightness(1.3);
+}
+
+.content-header__categories-btn.selected {
+  background-color: var(--categories-button-selected-color);
+  color: #030303;
 }
 
 /* This is the Content Grid Section */
